@@ -7,17 +7,18 @@
     <meta charset="utf-8">
     <title>Register</title>
   </head>
+  <link rel="stylesheet" href="./color.css">
   <body>
    <!-- Define a name (resister) using h1 tag. -->
-    <h1>Register</h1>
+    <h1><u>REGISTER</u></h1>
         <!-- All the code will be written under the form tag from html add form tag first.
          you can read about form here >>(https://www.w3schools.com/tags/tag_form.asp)  -->
 
           <form class="form" action="index.html" method="post">
             <!-- Now define label for first and last name and add input tag for input of name. -->
-            <label for="first">First Name</label>
+            <label for="first" class="text">First Name</label>
             <input type="text" name="" value="" placeholder="Enter First Name" required >
-            <label for="last">Last Name</label>
+            <label for="last" class="text">Last Name</label>
             <input type="text" name="" value="" placeholder="Enter Last Name" required>
             <!-- For dots like buttons(radio button) define inpute tag with type="radio" and
             make sure for every radio button name must be same(it can be any name)
@@ -34,9 +35,9 @@
              email the type of the inpute must be email and for password
             the type must be password (add required so that the sapce must be filled) -->
             <div class="">
-              <label for="email">Email:</label>
+              <label for="email" class="text">Email:</label>
               <input type="email" name="email" value="" placeholder="Enter Email" required>
-              <label for="password">Last Name</label>
+              <label for="password" class="text">Password </label>
               <input type="password" name="password" value="" placeholder="Enter Password" pattern=".{5,10}"
               required title="Enter password between 5 to 10 char">
             </div>
@@ -44,8 +45,8 @@
              Birthday for those dropdown options and inside select add <option value="">here will be the option</option>
             (i use few examples like for months i have not use every months in the option )       -->
             <div class="">
-              <label for="">
-                Birthday:
+              <label for="" >
+                <span class="text">Birthday:</span>
                <select class="" name="month">
                  <option value="">Month</option>
                  <option value="">Jan</option>
@@ -68,12 +69,12 @@
             </div>
             <!-- For last line use lable as usual and for checkbox define input with type="checkbox".  -->
             <div class="">
-                <label for="agreed"> I agree to the terms and conditions :</label>
+                <label for="agreed" class="agree"> I agree to the terms and conditions :</label>
                 <input type="checkbox" name="" value="">
             </div>
              <!-- finally last thing the submit button here use input but with button as the type (type="button") and add name and vale as submit. -->
             <div class="">
-               <input type="button" class="form" name="submit" value="Submit">
+               <input type="button" class="form submit" name="submit" value="Submit">
             </div>
        </form>
   </body>
